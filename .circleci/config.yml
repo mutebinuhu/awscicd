@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-   say-nuhu:
+  say-nuhu:
       docker:
         - image: cimg/base:stable
       steps:
