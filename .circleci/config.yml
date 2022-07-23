@@ -47,7 +47,7 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-            # You can get this ID in the section where you registered the SSH Keys
+            # You can get this ID in the section where you registered the SSH Key
             fingerprints: ["f6:29:0a:ce:42:4e:64:92:26:14:01:00:6e:88:d2:77"]
             
 
