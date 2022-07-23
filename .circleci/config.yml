@@ -52,7 +52,7 @@ jobs:
             
 
       - run:
-          name: Install Ansible to the hosts
+          name: Install Ansible
           command: apk add --update ansible 
 
       - run:
