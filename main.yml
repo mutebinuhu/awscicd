@@ -1,4 +1,4 @@
-- name: "config server"
+- name: "config servers"
   hosts: all
   roles:
     - setup
