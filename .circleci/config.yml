@@ -55,9 +55,9 @@ jobs:
           name: Install Ansible
           command: apk add --update ansible 
 
-      #- run:
-        #  name: Run Playbook and Configure server
-        #  command: ansible-playbook -i inventory.ini main.yml
+      - run:
+          name: Run Playbook and Configure server
+          command: ansible-playbook -i inventory.ini main.yml
 workflows:
   say-hello-workflow:
     jobs:
@@ -66,6 +66,6 @@ workflows:
     
   create_infrastructure-workflow:
     jobs:
-     - create_infrastructure
+     #- create_infrastructure
      - configure_infrastructure
    
