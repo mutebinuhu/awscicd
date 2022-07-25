@@ -1,4 +1,5 @@
 - name: "config servers"
   hosts: all
+  user: ubuntu
   roles:
     - setup
