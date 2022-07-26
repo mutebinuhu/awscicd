@@ -56,7 +56,7 @@ jobs:
   # Exercise: Smoke Testing
   smoke_test:
     docker:
-      - image: alpine:latest
+        - image: amazon/aws-cli
     steps:
 
       - run:
@@ -95,7 +95,7 @@ workflows:
   create_infrastructure-workflow:
     jobs:
    
-     - configure_infrastructure
+     #- configure_infrastructure
      - smoke_test
      - create_infrastructure
    
