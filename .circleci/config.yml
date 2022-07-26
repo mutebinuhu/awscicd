@@ -45,8 +45,13 @@ jobs:
       - image: alpine:latest
     steps:
       - run:
+          name: "add cli"
+          command: apk add --no-cache aws-cli
+          when: on_fail
+      - run:
           name: Test job
           # Fail the job intentionally to simulate an error.
+          
           command:  return 1
       - destroy_environment  
 
